@@ -1,0 +1,106 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right top, #051937, #1d3054, #354974, #4c6495, #6580b7, #5a96d2, #44adea, #00c4ff, #00d7f5, #00e6c8, #00ed7f, #a8eb12);
+}
+
+/* Login */
+.box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+
+    /* bottom: 0px;
+    top: 0px; */
+}
+.login{
+    /* width: 250px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* padding: 15px 0 15px 0; */
+    /* border: 0px; */
+    border-radius: 20px;
+    padding: 55px;
+    padding-left: 200px;
+    padding-right: 200px;
+    box-shadow: 0 2px 5px;
+    /* backdrop-filter: blur(55px); */
+
+}
+.container i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 7%;
+    border-radius: 50%;
+    margin-left: 45%;
+    background: white;
+    box-shadow: 0 2px 5px;
+}
+i{
+    font-size: 100px;
+    color: black;
+    height: 145px;
+    width: 145px;
+}
+
+.login h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    color: black;
+}
+.login input[type="text"], input[type="password"]{
+    height: 40px;
+    width: 86%;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 10px 0 25px;    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+::-webkit-input-placeholder{
+    color: wheat;
+}
+.login input[type="submit"]{
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    transition: .7s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.login input[type="submit"]:hover{
+    /* Esse box-shadow faz com que seja adicionado uma cor ao botão quando o cursor for 
+    passado por ele o "inset -10.5em 0 0 0 #44adea" faz essa cor aparecer da direita 
+    para a esquerda até um certo ponto do botão que depois do centro, sem seguida, o
+    inset 10.5em 0 0 0 #44adea, faz o caminho contrario da esquerda para a direita 
+    justamente pelo motivo do valor inicial do "inset" não ser negativo. Formando assim, 
+    uma ação de mudança de cor no botão como se fosse se retraindo para o centro do 
+    botão. */
+    /* box-shadow: inset -10.5em 0 0 0 #44adea, inset 10.5em 0 0 0 #44adea; */
+
+    background-color: #44adea;
+}
+.inp-bttn{
+    padding-top: 20px;
+}
+.lmb-senha{
+    color: white;
+}
+  
